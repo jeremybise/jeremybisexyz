@@ -1,1 +1,37 @@
-{{ define "main" }} {{ .Params.intro_text | markdownify }} {{ end }}
+{{ define "main" }}
+
+<p>{{ .Params.intro_text | markdownify }}</p>
+
+<h2>What I'm Good At</h2>
+<ul>
+  <li>Stuff</li>
+</ul>
+
+<h2>Projects</h2>
+
+<table>
+  <th>
+    <tr>
+      <td>Year</td>
+      <td>Client</td>
+      <td>Tech</td>
+      <td>Visit</td>
+    </tr>
+  </th>
+  {{ range $.Site.Data.work.projects }}
+  <tr>
+    <td>{{ .year }}</td>
+    <td>{{ .name }}</td>
+    <td>
+      {{ with .tags }} {{ range . }} <span class="tag">{{ . }}</span> {{ end }}
+      {{ end }}
+    </td>
+    <td>
+      {{ with .url }}<a href="{{.}}" target="_blank">Visit site &rarr;</a>{{ end
+      }}
+    </td>
+  </tr>
+  {{ end }}
+</table>
+
+{{ end }}

@@ -1,0 +1,15 @@
+projects:
+  - name: Washington County, Virginia Fair
+    year: 2024
+    tags:
+      - WordPress
+      - Elementor
+      - SCSS
+    url: https://scplva.net
+  - name: Other Thing
+    year: 2021
+    tags:
+      - WordPress
+      - SCSS
+      - Elementor
+    url: https://wcpl.net
