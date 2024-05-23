@@ -1,1 +1,1 @@
-{{ define "main" }} test {{ end }}
+{{ define "main" }} {{ .Params.intro_text | markdownify }} {{ end }}
