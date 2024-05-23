@@ -4,12 +4,10 @@ projects:
     tags:
       - WordPress
       - Elementor
-      - SCSS
     url: https://scplva.net
-  - name: Other Thing
+  - name: Washington County, Virginia Public Libraries
     year: 2021
     tags:
       - WordPress
-      - SCSS
-      - Elementor
+      - GravityForms
     url: https://wcpl.net
