@@ -2,22 +2,24 @@
 
 <p>{{ .Params.intro_text | markdownify }}</p>
 
+<hr />
+
 <h2>What I'm Good At</h2>
 <ul>
   <li>Stuff</li>
 </ul>
 
+<hr />
+
 <h2>Projects</h2>
 
 <table>
-  <th>
-    <tr>
-      <td>Year</td>
-      <td>Client</td>
-      <td>Tech</td>
-      <td>Visit</td>
-    </tr>
-  </th>
+  <tr>
+    <th>Year</th>
+    <th>Client</th>
+    <th>Tech</th>
+    <th>Visit</th>
+  </tr>
   {{ range $.Site.Data.work.projects }}
   <tr>
     <td>{{ .year }}</td>

@@ -1,0 +1,21 @@
+body {
+  background: $blue-gray-900;
+}
+.wrapper {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+}
+.global-header {
+  flex: 1;
+  padding: 2rem;
+  .inner {
+    position: sticky;
+    top: 4rem;
+  }
+}
+.main {
+  flex: 2;
+  padding: 2rem;
+  min-height: 5000px;
+}

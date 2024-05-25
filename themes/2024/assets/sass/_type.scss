@@ -1,0 +1,36 @@
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  color: $blue-gray-100;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 900;
+}
+
+hr {
+  border-top: none;
+  border-bottom: 1px solid $blue-gray-700;
+  margin: 3rem 0;
+}
+
+table {
+  border-collapse: collapse;
+  th {
+    padding: 1rem 0.5rem;
+    td {
+      font-weight: bold;
+    }
+  }
+  td {
+    padding: 1rem 0.5rem;
+  }
+  tr {
+    border-bottom: 1px solid $blue-gray-700;
+  }
+}
